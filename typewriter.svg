@@ -1,17 +1,24 @@
-<svg xmlns="http://w3.org" width="300" height="40">
+<svg xmlns="http://w3.org" width="300" height="40" viewBox="0 0 300 40">
   <style>
     .text {
-      font: bold 18px monospace;
-      fill: #333;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 2px solid orange;
-      animation: typing 3.5s steps(22, end) infinite, blink .75s step-end infinite;
+      font-family: monospace;
+      font-size: 18px;
+      font-weight: bold;
+      fill: #24292e; /* Dark gray text, matches GitHub light mode */
     }
-    @keyframes typing { from { width: 0 } to { width: 210px } }
-    @keyframes blink { from, to { border-color: transparent } 50% { border-color: orange } }
+    .cursor {
+      fill: orange;
+      animation: blink 0.75s step-end infinite;
+    }
+    @keyframes blink { 
+      from, to { opacity: 0 } 
+      50% { opacity: 1 } 
+    }
   </style>
-  <div xmlns="http://w3.org">
-    <div class="text">Hey, it's Vaibhav Prasad!</div>
-  </div>
+
+  <!-- Clean SVG text wrapper instead of HTML divs -->
+  <text x="10" y="25" class="text">Hey, it's Vaibhav Prasad!</text>
+  
+  <!-- The blinking cursor placed right after your text -->
+  <rect x="255" y="10" width="3" height="18" class="cursor" />
 </svg>
