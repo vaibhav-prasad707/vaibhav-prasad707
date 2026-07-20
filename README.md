@@ -1,9 +1,3 @@
-  <picture>
-    <source media="Gemini_Generated_Image_1c4gzy1c4gzy1c4g.png" srcset="#gh-dark-mode-only"/>
-    <source media="Gemini_Generated_Image_1c4gzy1c4gzy1c4g.png" srcset="#gh-light-mode-only"/>
-    <img alt="Animated header" src="#gh-light-mode-only"/>
-  </picture>
-
   <style>
     .typewriter {
       overflow: hidden; /* Ensures the content is not revealed until the animation */
