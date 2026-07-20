@@ -1,0 +1,17 @@
+<svg xmlns="http://w3.org" width="300" height="40">
+  <style>
+    .text {
+      font: bold 18px monospace;
+      fill: #333;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid orange;
+      animation: typing 3.5s steps(22, end) infinite, blink .75s step-end infinite;
+    }
+    @keyframes typing { from { width: 0 } to { width: 210px } }
+    @keyframes blink { from, to { border-color: transparent } 50% { border-color: orange } }
+  </style>
+  <div xmlns="http://w3.org">
+    <div class="text">Hey, it's Vaibhav Prasad!</div>
+  </div>
+</svg>
