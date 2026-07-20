@@ -1,16 +1,30 @@
-## Hi there 👋
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="#gh-dark-mode-only"/>
+    <source media="(prefers-color-scheme: light)" srcset="#gh-light-mode-only"/>
+    <img alt="Animated header" src="#gh-light-mode-only"/>
+  </picture>
 
-<!--
-**vaibhav-prasad707/vaibhav-prasad707** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <style>
+    .typewriter {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange; /* The cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to   { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50%      { border-color: orange; }
+    }
+  </style>
+  
+  <div class="typewriter">
+    Hey, it's Vaibhav Prasad!
+  </div>
